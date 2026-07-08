@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | SecureNet Solutions</title>
+    <link href="css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800">
+
+    <!-- Prompt for Services page
+    As a professional website developer I want you to use ONLY Html, css and Tailwind CSS, NO javascript, to build a responsive professional website Services Page (service.html) for SecureNet Solutions, this website would be deployed and shared across different websites, SecureNet Solutions is an IT infrastructure and smart security website that deals on hardware installations, CCTV installations, Website Development, Mobile App development and technical support. 
+This website consists of multiple pages (Home Page (index.html), About Us Page (about.html), Services Page (services.html), Projects Page (projects.html) and Contact Page (contact.html).
+The website already has a header and a footer, don’t design header and footer.
+Services Page (services.html)
+The core technical catalog. This page details the exact offerings in IT Infrastructure and Smart Security.
+•	Category 1: Enterprise IT Infrastructure
+o	Structured Network Cabling & Architecture.
+o	Server Room Design & Hardware Deployment.
+o	Cloud-Ready Infrastructure & Virtualization.
+•	Category 2: Smart Security Systems
+o	Advanced Commercial CCTV Surveillance Layouts.
+o	Biometric Access Control & IP Intercom Systems.
+o	Intrusion Detection & Physical-to-Digital Security Integration.
+•	Design Tip: Use Tailwind's grid layout (grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6) with subtle card borders, shadow transitions on hover (hover:shadow-xl transition-all duration-300), and clean icon placeholders to make the technical details easy to scan.
+-->
+
+    <!-- ==================== STICKY HEADER / NAVIGATION ==================== -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2 shrink-0 group">
+                    <div class="w-9 h-9 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <i class="fas fa-shield-halved text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent tracking-tight">SecureNet</span>
+                    <span class="text-xl font-semibold text-gray-600 hidden sm:inline">Solutions</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-1">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">Home</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">About</a>
+                    <a href="services.html" class="px-4 py-2 rounded-lg text-sm font-medium text-blue-700 bg-blue-50 transition-all hover:bg-blue-100">Services</a>
+                    <a href="projects.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">Projects</a>
+                    <a href="contact.html" class="ml-2 px-5 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <label for="mobile-menu-toggle" class="cursor-pointer p-2 rounded-lg text-gray-600 hover:text-blue-700 hover:bg-gray-100 transition-all">
+                        <i class="fas fa-bars text-xl"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="mobile-menu-toggle" class="peer hidden">
+        <div class="peer-checked:block hidden md:hidden border-t border-gray-100 bg-white shadow-lg">
+            <nav class="flex flex-col px-4 py-3 gap-1">
+                <a href="index.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">Home</a>
+                <a href="about.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">About Us</a>
+                <a href="services.html" class="px-4 py-3 rounded-lg text-sm font-medium text-blue-700 bg-blue-50">Services</a>
+                <a href="projects.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">Projects</a>
+                <a href="contact.html" class="px-4 py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 text-center mt-1">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== PAGE HERO ==================== -->
+   <main>
+     <section class="relative text-white overflow-hidden">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+            <div class="w-15 h-15 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-shield-halved text-4xl text-blue-600"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Our <span class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Technical Services</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed">
+                End-to-end IT infrastructure and smart security solutions engineered for reliability, scalability, and uncompromising protection.
+            </p>
+        </div>
+    </section>
+   </main>
+
+    <!-- ==================== CATEGORY 1: ENTERPRISE IT INFRASTRUCTURE ==================== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-server text-white text-lg"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Enterprise IT Infrastructure</h2>
+                    <p class="text-gray-500 text-sm mt-1">The backbone your business runs on — designed, deployed, and maintained to enterprise standards.</p>
+                </div>
+            </div>
+            <div class="w-full h-px bg-gradient-to-r from-blue-200 via-indigo-200 to-transparent mb-12"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1: Structured Network Cabling -->
+                <div class="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-300">
+                        <i class="fas fa-network-wired text-blue-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Structured Network Cabling & Architecture</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                        We design and install complete structured cabling systems — from Cat6A and fiber optic drops to patch panels, cable trays, and termination enclosures. Every cable is labeled, tested, and documented for rapid troubleshooting and future scalability.
+                    </p>
+                    <ul class="space-y-2.5 mb-6">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-blue-500 text-xs mt-1"></i>
+                            <span>Cat5e / Cat6A / Cat7 copper cabling</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-blue-500 text-xs mt-1"></i>
+                            <span>Single-mode & multimode fiber optic installation</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-blue-500 text-xs mt-1"></i>
+                            <span>Patch panel termination & cable management</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-blue-500 text-xs mt-1"></i>
+                            <span>Fluke certification & full documentation</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Cat6A</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Fiber Optic</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Patch Panels</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Fluke Testing</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: Server Room Design -->
+                <div class="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:border-indigo-600 transition-all duration-300">
+                        <i class="fas fa-database text-indigo-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Server Room Design & Hardware Deployment</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                        From rack layout to power distribution, we architect server rooms that maximize uptime, cooling efficiency, and physical security. We handle hardware procurement, rack-and-stack, cable dressing, and full system integration.
+                    </p>
+                    <ul class="space-y-2.5 mb-6">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-indigo-500 text-xs mt-1"></i>
+                            <span>Rack layout & thermal management design</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-indigo-500 text-xs mt-1"></i>
+                            <span>UPS & power distribution unit (PDU) setup</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-indigo-500 text-xs mt-1"></i>
+                            <span>Server hardware procurement & installation</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-indigo-500 text-xs mt-1"></i>
+                            <span>Environmental monitoring (temp, humidity, airflow)</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">HP ProLiant</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">APC UPS</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Dell PowerEdge</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Rack & Stack</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: Cloud-Ready Infrastructure -->
+                <div class="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center mb-6 group-hover:bg-sky-600 group-hover:border-sky-600 transition-all duration-300">
+                        <i class="fas fa-cloud text-sky-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Cloud-Ready Infrastructure & Virtualization</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                        We prepare your on-premise infrastructure for hybrid or full cloud migration. Our virtualization setups reduce hardware costs, improve disaster recovery, and enable elastic scaling without rebuilding from scratch.
+                    </p>
+                    <ul class="space-y-2.5 mb-6">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-sky-500 text-xs mt-1"></i>
+                            <span>VMware vSphere & Hyper-V virtualization</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-sky-500 text-xs mt-1"></i>
+                            <span>Hybrid cloud architecture planning</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-sky-500 text-xs mt-1"></i>
+                            <span>Container orchestration (Docker, Kubernetes)</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-sky-500 text-xs mt-1"></i>
+                            <span>Backup & disaster recovery automation</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">VMware</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Hyper-V</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Docker</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">AWS/Azure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORY 2: SMART SECURITY SYSTEMS ==================== -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-shield-halved text-white text-lg"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Smart Security Systems</h2>
+                    <p class="text-gray-500 text-sm mt-1">Intelligent surveillance and access control that protects people, assets, and data — 24/7.</p>
+                </div>
+            </div>
+            <div class="w-full h-px bg-gradient-to-r from-emerald-200 via-teal-200 to-transparent mb-12"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 4: Advanced CCTV Surveillance -->
+                <div class="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:border-emerald-600 transition-all duration-300">
+                        <i class="fas fa-video text-emerald-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Advanced Commercial CCTV Surveillance Layouts</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                        We design and install high-definition IP camera networks tailored to your facility's layout and risk profile. From wide-angle coverage to license plate recognition, every angle is accounted for — with remote monitoring, night vision, and intelligent motion analytics.
+                    </p>
+                    <ul class="space-y-2.5 mb-6">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-emerald-500 text-xs mt-1"></i>
+                            <span>4K / 8MP IP camera installation & positioning</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-emerald-500 text-xs mt-1"></i>
+                            <span>PTZ, dome, bullet & thermal camera selection</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-emerald-500 text-xs mt-1"></i>
+                            <span>NVR / VMS setup with remote mobile access</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-emerald-500 text-xs mt-1"></i>
+                            <span>Motion detection, line-crossing & facial recognition</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Hikvision</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Dahua</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">PoE Switches</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">NVR 64-Ch</span>
+                    </div>
+                </div>
+
+                <!-- Service 5: Biometric Access Control -->
+                <div class="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 border border-teal-100 flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:border-teal-600 transition-all duration-300">
+                        <i class="fas fa-fingerprint text-teal-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Biometric Access Control & IP Intercom Systems</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                        Replace physical keys with intelligent access systems. We deploy fingerprint, facial recognition, and RFID card readers integrated with magnetic locks, door sensors, and a centralized management dashboard for real-time access control and audit trails.
+                    </p>
+                    <ul class="space-y-2.5 mb-6">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-teal-500 text-xs mt-1"></i>
+                            <span>Fingerprint, face & RFID card reader installation</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-teal-500 text-xs mt-1"></i>
+                            <span>Magnetic & electric strike lock integration</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-teal-500 text-xs mt-1"></i>
+                            <span>IP intercom with video verification</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-teal-500 text-xs mt-1"></i>
+                            <span>Time-based permissions & entry log analytics</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">ZKTeco</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">RFID Cards</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Mag Locks</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">IP Intercom</span>
+                    </div>
+                </div>
+
+                <!-- Service 6: Intrusion Detection -->
+                <div class="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-50 border border-cyan-100 flex items-center justify-center mb-6 group-hover:bg-cyan-600 group-hover:border-cyan-600 transition-all duration-300">
+                        <i class="fas fa-bell text-cyan-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Intrusion Detection & Physical-to-Digital Security Integration</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                        We bridge physical security with digital monitoring. Our intrusion detection systems combine perimeter sensors, alarm panels, and SMS/email alerting — all tied into a unified security operations dashboard for centralized visibility and rapid response.
+                    </p>
+                    <ul class="space-y-2.5 mb-6">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-cyan-500 text-xs mt-1"></i>
+                            <span>Perimeter beam & motion sensor installation</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-cyan-500 text-xs mt-1"></i>
+                            <span>Alarm panel configuration & zone mapping</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-cyan-500 text-xs mt-1"></i>
+                            <span>SMS, email & push notification alerts</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-cyan-500 text-xs mt-1"></i>
+                            <span>Integration with CCTV & access control systems</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Motion Sensors</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Alarm Panels</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">SMS Alerts</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Unified Dashboard</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORY 3: DEVELOPMENT & SUPPORT ==================== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-code text-white text-lg"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Development & Technical Support</h2>
+                    <p class="text-gray-500 text-sm mt-1">Custom digital solutions and ongoing technical expertise to keep your systems running.</p>
+                </div>
+            </div>
+            <div class="w-full h-px bg-gradient-to-r from-pink-200 via-rose-200 to-transparent mb-12"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 7: Website Development -->
+                <div class="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-50 border border-pink-100 flex items-center justify-center mb-6 group-hover:bg-pink-600 group-hover:border-pink-600 transition-all duration-300">
+                        <i class="fas fa-laptop-code text-pink-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Website Development</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                        We build responsive, SEO-optimized websites using semantic HTML5 and Tailwind CSS — from corporate portfolios to complex web applications. Clean code, fast load times, and mobile-first design are non-negotiables.
+                    </p>
+                    <ul class="space-y-2.5 mb-6">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-pink-500 text-xs mt-1"></i>
+                            <span>Responsive, mobile-first web design</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-pink-500 text-xs mt-1"></i>
+                            <span>Semantic HTML5 & Tailwind CSS architecture</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-pink-500 text-xs mt-1"></i>
+                            <span>SEO optimization & performance tuning</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-pink-500 text-xs mt-1"></i>
+                            <span>REST API integration & dynamic content</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">HTML5</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Tailwind CSS</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">SEO</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Responsive</span>
+                    </div>
+                </div>
+
+                <!-- Service 8: Mobile App Development -->
+                <div class="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-rose-50 border border-rose-100 flex items-center justify-center mb-6 group-hover:bg-rose-600 group-hover:border-rose-600 transition-all duration-300">
+                        <i class="fas fa-mobile-screen-button text-rose-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Mobile App Development</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                        Cross-platform mobile applications built for performance and usability. From field service tools to e-commerce apps, we deliver native-quality experiences on both iOS and Android with a single, maintainable codebase.
+                    </p>
+                    <ul class="space-y-2.5 mb-6">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-rose-500 text-xs mt-1"></i>
+                            <span>Cross-platform development (iOS & Android)</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-rose-500 text-xs mt-1"></i>
+                            <span>Offline-first architecture with sync</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-rose-500 text-xs mt-1"></i>
+                            <span>Push notifications & real-time updates</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-rose-500 text-xs mt-1"></i>
+                            <span>API integration & secure authentication</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">React Native</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Flutter</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Offline Sync</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Push Notifications</span>
+                    </div>
+                </div>
+
+                <!-- Service 9: Technical Support -->
+                <div class="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center mb-6 group-hover:bg-orange-600 group-hover:border-orange-600 transition-all duration-300">
+                        <i class="fas fa-headset text-orange-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Technical Support & Maintenance</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                        Ongoing support contracts that keep your infrastructure healthy and your team productive. We offer remote monitoring, on-site troubleshooting, preventive maintenance, and emergency response — with guaranteed SLAs.
+                    </p>
+                    <ul class="space-y-2.5 mb-6">
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-orange-500 text-xs mt-1"></i>
+                            <span>24/7 remote monitoring & alerting</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-orange-500 text-xs mt-1"></i>
+                            <span>On-site troubleshooting & repairs</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-orange-500 text-xs mt-1"></i>
+                            <span>Preventive maintenance schedules</span>
+                        </li>
+                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                            <i class="fas fa-check text-orange-500 text-xs mt-1"></i>
+                            <span>Emergency response with SLA guarantees</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">SLA Contracts</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Remote Monitoring</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">On-Site Support</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Preventive Care</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Need a Custom Solution?</h2>
+            <p class="text-blue-100/80 text-lg mb-8 max-w-2xl mx-auto">
+                Every business has unique infrastructure and security requirements. Let's discuss how we can tailor our services to your specific environment.
+            </p>
+            <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-blue-900 font-semibold text-lg hover:bg-blue-50 transition-all shadow-xl hover:shadow-2xl">
+                <i class="fas fa-paper-plane"></i>
+                Request a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-halved text-white text-xs"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">SecureNet Solutions</span>
+                    </a>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                        Delivering cutting-edge IT infrastructure, smart security solutions, and digital transformation services to businesses across Nigeria and beyond.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href=https://github.com/RosemaryChisom375" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700 hover:border-gray-600">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chisom-rosemary-akabueze/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-blue-700 flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700 hover:border-blue-600">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Home</a></li>
+                        <li><a href="about.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> About Us</a></li>
+                        <li><a href="services.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Services</a></li>
+                        <li><a href="projects.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Projects</a></li>
+                        <li><a href="contact.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-video text-blue-500 text-xs w-4"></i> CCTV Installation</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-server text-blue-500 text-xs w-4"></i> Hardware Installation</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-code text-blue-500 text-xs w-4"></i> Website Development</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-mobile-screen text-blue-500 text-xs w-4"></i> Mobile App Development</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-headset text-blue-500 text-xs w-4"></i> Technical Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <p class="text-xs text-gray-500 text-center sm:text-left">&copy; 2026 SecureNet Solutions. All rights reserved.</p>
+                    <div class="flex items-center gap-4 text-xs text-gray-500">
+                        <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                        <span class="text-gray-700">|</span>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureNet Solutions | IT Infrastructure & Smart Security</title>
+    <link href="css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    
+<!-- Promt for Header and Footer
+As a professional website developer I want you use ONLY Html, css and Tailwind CSS NO javascript, to build a responsive professional website Header and Footer for SecureNet Solutions, this webiste would be deployed and shared across different websites, SecureNet Solutions is an IT infrastructure and smart security website that deals on hardware installations, CCTV installations, Website Development, Mobile App development and technical support.
+This website consists of multiple pages (Home Page (index.html), About Us Page (about.html), Services Page (services.html), Projects Page (projects.html) and Contact Page (contact.html).
+Use CSS Checkbox for the navigation. Every page must contain a consistent header and footer. The header should be sticky.
+Below is the specification for the header and footer
+•  Header / Navigation Bar: Contains the brand logo (SecureNet Solutions) and clear text links to all pages. Design a clean, fully responsive horizontal nav that adapts beautifully to smaller screens using Tailwind's responsive utilities (md:flex, hidden).
+•  Footer: Standard professional footer containing a brief copyright notice, quick site links, and explicit icon links to a professional socials (GitHub and LinkedIn).
+-->
+    
+
+
+    <!-- ==================== STICKY HEADER / NAVIGATION ==================== -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+
+                <!-- Brand Logo -->
+                <a href="index.html" class="flex items-center gap-2 shrink-0 group">
+                    <div class="w-9 h-9 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <i class="fas fa-shield-halved text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent tracking-tight">SecureNet</span>
+                    <span class="text-xl font-semibold text-gray-600 hidden sm:inline">Solutions</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-1">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm font-medium text-blue-700 bg-blue-50 transition-all hover:bg-blue-100">Home</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">About Us</a>
+                    <a href="services.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">Services</a>
+                    <a href="projects.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">Projects</a>
+                    <a href="contact.html" class="ml-2 px-5 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Toggle (CSS Checkbox — No JS) -->
+                <div class="md:hidden">
+                    <label for="mobile-menu-toggle" class="cursor-pointer p-2 rounded-lg text-gray-600 hover:text-blue-700 hover:bg-gray-100 transition-all">
+                        <i class="fas fa-bars text-xl"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation (CSS Checkbox Controlled) -->
+        <input type="checkbox" id="mobile-menu-toggle" class="peer hidden">
+        <div class="peer-checked:block hidden md:hidden border-t border-gray-100 bg-white shadow-lg">
+            <nav class="flex flex-col px-4 py-3 gap-1">
+                <a href="index.html" class="px-4 py-3 rounded-lg text-sm font-medium text-blue-700 bg-blue-50">Home</a>
+                <a href="about.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">About Us</a>
+                <a href="services.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">Services</a>
+                <a href="projects.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">Projects</a>
+                <a href="contact.html" class="px-4 py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 text-center mt-1">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== PAGE CONTENT ==================== -->
+    <main class="min-h-[70vh] flex items-center justify-center">
+        <div class="text-center px-4">
+            <div class="w-20 h-20 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-shield-halved text-4xl text-blue-600"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">SecureNet Solutions</h1>
+            <p class="text-lg text-gray-500 max-w-xl mx-auto mb-8">IT Infrastructure & Smart Security — Hardware, CCTV, Web & Mobile Development, Technical Support.</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">CCTV Installation</span>
+                <span class="px-4 py-2 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium">Web Development</span>
+                <span class="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">App Development</span>
+                <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">Tech Support</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+
+                <!-- Brand & Description -->
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-halved text-white text-xs"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">SecureNet Solutions</span>
+                    </a>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                        Delivering cutting-edge IT infrastructure, smart security solutions, and digital transformation services to businesses across Nigeria and beyond.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="https://github.com/RosemaryChisom375" target="_blank" rel="noopener noreferrer"
+                           class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700 hover:border-gray-600">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chisom-rosemary-akabueze/" target="_blank" rel="noopener noreferrer"
+                           class="w-10 h-10 rounded-full bg-gray-800 hover:bg-blue-700 flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700 hover:border-blue-600">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Home</a></li>
+                        <li><a href="about.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> About Us</a></li>
+                        <li><a href="services.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Services</a></li>
+                        <li><a href="projects.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Projects</a></li>
+                        <li><a href="contact.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-video text-blue-500 text-xs w-4"></i> CCTV Installation</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-server text-blue-500 text-xs w-4"></i> Hardware Installation</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-code text-blue-500 text-xs w-4"></i> Website Development</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-mobile-screen text-blue-500 text-xs w-4"></i> Mobile App Development</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-headset text-blue-500 text-xs w-4"></i> Technical Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <p class="text-xs text-gray-500 text-center sm:text-left">
+                        &copy; 2026 SecureNet Solutions. All rights reserved.
+                    </p>
+                    <div class="flex items-center gap-4 text-xs text-gray-500">
+                        <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                        <span class="text-gray-700">|</span>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | SecureNet Solutions</title>
+    <link href="css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800">
+    
+           <!-- Projects Prompt
+        As a professional website developer I want you to use ONLY Html, css and Tailwind CSS, NO javascript, to build a responsive professional website Projects Page (project.html) for SecureNet Solutions, this website would be deployed and shared across different websites, SecureNet Solutions is an IT infrastructure and smart security website that deals on hardware installations, CCTV installations, Website Development, Mobile App development and technical support. 
+        This website consists of multiple pages (Home Page (index.html), About Us Page (about.html), Services Page (services.html), Projects Page (projects.html) and Contact Page (contact.html).
+        The website already has a header and a footer, don’t design header and footer.
+        Projects Page (projects.html)   
+        This page should show proof of competence and practical application.
+•       Project Filter/Categorization: Use a clear, beautiful grid layout where    projects are neatly organized under distinct, well-labeled section headings (e.g., Featured Infrastructure Deployments, Smart Security Implementations, RFID supplied, Network implementations).
+•   Project Cards: Each project should feature:
+o   A high-quality placeholder or mock structural image area.
+o   A detailed project overview (The Challenge, The Solution, The Result).
+o   A "Tech Stack/Tools Used" tag list (e.g., Tailwind CSS, HTML5, Network Topology, IP Cameras).
+•   GitHub Repository Callout: A dedicated banner encouraging visitors to inspect the clean code and repository structure directly.
+-->
+
+    <!-- ==================== STICKY HEADER / NAVIGATION ==================== -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2 shrink-0 group">
+                    <div class="w-9 h-9 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <i class="fas fa-shield-halved text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent tracking-tight">SecureNet</span>
+                    <span class="text-xl font-semibold text-gray-600 hidden sm:inline">Solutions</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-1">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">Home</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">About</a>
+                    <a href="services.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">Services</a>
+                    <a href="projects.html" class="px-4 py-2 rounded-lg text-sm font-medium text-blue-700 bg-blue-50 transition-all hover:bg-blue-100">Projects</a>
+                    <a href="contact.html" class="ml-2 px-5 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <label for="mobile-menu-toggle" class="cursor-pointer p-2 rounded-lg text-gray-600 hover:text-blue-700 hover:bg-gray-100 transition-all">
+                        <i class="fas fa-bars text-xl"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="mobile-menu-toggle" class="peer hidden">
+        <div class="peer-checked:block hidden md:hidden border-t border-gray-100 bg-white shadow-lg">
+            <nav class="flex flex-col px-4 py-3 gap-1">
+                <a href="index.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">Home</a>
+                <a href="about.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">About Us</a>
+                <a href="services.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">Services</a>
+                <a href="projects.html" class="px-4 py-3 rounded-lg text-sm font-medium text-blue-700 bg-blue-50">Projects</a>
+                <a href="contact.html" class="px-4 py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 text-center mt-1">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+ <!-- ==================== PAGE HERO ==================== -->
+  <main>
+      <section class="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl translate-x-1/3 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-72 h-72 bg-indigo-400 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+            <div class="w-15 h-15 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-shield-halved text-4xl text-blue-600"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+                Projects & <span class="bg-gradient-to-r from-blue-300 to-indigo-300 bg-clip-text text-transparent">Deployments</span>
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100/80 max-w-3xl mx-auto leading-relaxed">
+                A curated showcase of infrastructure builds, security implementations, and digital solutions delivered with precision and technical rigor.
+            </p>
+        </div>
+    </section>
+  </main>
+
+    <!-- ==================== SECTION 1: FEATURED INFRASTRUCTURE DEPLOYMENTS ==================== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-1 h-10 bg-gradient-to-b from-blue-600 to-indigo-600 rounded-full"></div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Featured Infrastructure Deployments</h2>
+                    <p class="text-gray-500 text-sm mt-1">Enterprise-grade hardware and server architecture built for scale.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Enterprise Server Room -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/enterprise server room.jfif" alt="Enterprise Server Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-blue-600/90 backdrop-blur-sm text-white text-xs font-semibold">Infrastructure</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors">Enterprise Server Room Overhaul</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Legacy server infrastructure at a financial institution was experiencing frequent downtime, overheating, and lacked redundancy for critical operations.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Designed and deployed a fully redundant server rack with dual UPS systems, intelligent cooling, and fiber backbone cabling across three floors.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">99.99% uptime achieved. Cooling efficiency improved by 40%. Zero unplanned outages in 18 months post-deployment.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">HP ProLiant Servers</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">APC UPS</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Fiber Optic</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">VLAN Config</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Data Center Rack & Stack -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/Data Center Rack.jfif" alt="Data Center Rack" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-blue-600/90 backdrop-blur-sm text-white text-xs font-semibold">Infrastructure</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors">Data Center Rack & Stack</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A logistics company needed a centralized data center to consolidate scattered on-premise servers and enable real-time inventory tracking.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Built a 42U rack environment with managed switches, patch panels, cable management, and a structured labeling system for rapid troubleshooting.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Consolidated 12 legacy servers into 4 high-density units. Reduced troubleshooting time by 65% through structured cabling.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Cisco Switches</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Cat6A Cabling</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Patch Panels</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Rack Management</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Network Topology Redesign -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/multi-site.jfif" alt="Network Topology" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-blue-600/90 backdrop-blur-sm text-white text-xs font-semibold">Infrastructure</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors">Multi-Site Network Topology</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A retail chain with 8 branches suffered from slow inter-branch communication, frequent IP conflicts, and no centralized network management.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Designed a star topology with a central HQ hub, site-to-site VPN tunnels, DHCP reservations, and QoS prioritization for POS systems.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Network latency dropped by 78%. All 8 branches now communicate in real-time. Zero IP conflicts since deployment.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">MikroTik Routers</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Site-to-Site VPN</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">QoS Policies</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Subnetting</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 2: SMART SECURITY IMPLEMENTATIONS ==================== -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-1 h-10 bg-gradient-to-b from-emerald-500 to-teal-600 rounded-full"></div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Smart Security Implementations</h2>
+                    <p class="text-gray-500 text-sm mt-1">Surveillance, access control, and perimeter security systems.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 4: CCTV Campus Deployment -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/campus cctv.png" alt="CCTV Installation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-semibold">Security</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-emerald-700 transition-colors">University Campus CCTV Network</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A 5-hectare university campus had zero surveillance coverage, leaving dormitories, parking lots, and lecture halls unsecured.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Deployed 48 IP cameras (PTZ and fixed dome) across 12 zones with a centralized NVR, night vision, and remote mobile monitoring.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Full campus coverage achieved. Security incident response time reduced from 45 minutes to under 5 minutes.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Hikvision IP Cameras</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">NVR 64-Channel</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">PoE Switches</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Mobile App</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Access Control System -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/RFID.jfif" alt="Access Control" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-semibold">Security</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-emerald-700 transition-colors">RFID Access Control System</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A corporate office relied on physical keys with no audit trail, making it impossible to track who accessed restricted areas and when.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Installed RFID card readers on 18 doors with a centralized access management dashboard, time-based permissions, and entry logs.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">100% audit trail visibility. Unauthorized access attempts dropped to zero. Admin can grant/revoke access remotely in seconds.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">RFID Readers</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Magnetic Locks</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Access Software</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Door Sensors</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Perimeter Security -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/perimeter.jfif" alt="Perimeter Security" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-emerald-600/90 backdrop-blur-sm text-white text-xs font-semibold">Security</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-emerald-700 transition-colors">Perimeter Surveillance Grid</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A manufacturing plant's 2km perimeter fence had blind spots, leading to repeated theft of raw materials after hours.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Installed thermal-imaging cameras, motion-activated floodlights, and an alarm-triggered monitoring station with SMS alerts.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Theft incidents eliminated entirely. Perimeter breach detection rate improved to 100% with sub-10-second alert delivery.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Thermal Cameras</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Motion Sensors</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">SMS Alerts</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Floodlights</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 3: RFID SUPPLIED & CONFIGURED ==================== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-1 h-10 bg-gradient-to-b from-purple-500 to-violet-600 rounded-full"></div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">RFID Supplied & Configured</h2>
+                    <p class="text-gray-500 text-sm mt-1">End-to-end RFID hardware supply, configuration, and integration.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 7: RFID Asset Tracking -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/hospital.jfif" alt="RFID Asset Tracking" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-purple-600/90 backdrop-blur-sm text-white text-xs font-semibold">RFID</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors">Hospital Asset Tracking System</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A 200-bed hospital lost track of critical medical equipment daily, causing delays in patient care and unnecessary duplicate purchases.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Supplied and configured 500+ RFID tags for equipment, installed fixed readers at key chokepoints, and built a real-time asset dashboard.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Equipment location lookup time reduced from 30 minutes to 5 seconds. Saved ₦12M in duplicate procurement within the first year.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">UHF RFID Tags</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Fixed Readers</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Asset Dashboard</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Zebra Printers</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 8: RFID Library Management -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/library.jfif" alt="Library RFID" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-purple-600/90 backdrop-blur-sm text-white text-xs font-semibold">RFID</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors">Library RFID Management System</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A university library managed 50,000 books manually, causing long checkout queues, misplacement, and no theft detection at exits.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Supplied RFID tags for all books, installed self-checkout kiosks, security gates at exits, and a cloud-based catalog system.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Checkout time reduced from 4 minutes to 20 seconds. Book theft dropped to zero. Staff can locate any book in under 30 seconds.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">HF RFID Tags</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Self-Checkout Kiosks</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Security Gates</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Cloud Catalog</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 9: RFID Attendance -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/Employee attendance.jfif" alt="RFID Attendance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-purple-600/90 backdrop-blur-sm text-white text-xs font-semibold">RFID</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors">Employee RFID Attendance System</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A factory with 400+ workers used manual sign-in sheets, leading to buddy-punching, payroll disputes, and no real-time headcount data.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Deployed RFID card readers at all entry points with an integrated attendance software, biometric backup, and automated payroll export.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Payroll accuracy improved to 99.8%. Buddy-punching eliminated. HR generates attendance reports in under 2 minutes.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">RFID Card Readers</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Attendance Software</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Biometric Backup</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Payroll Export</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 4: NETWORK IMPLEMENTATIONS ==================== -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-1 h-10 bg-gradient-to-b from-orange-500 to-amber-600 rounded-full"></div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Network Implementations</h2>
+                    <p class="text-gray-500 text-sm mt-1">Structured cabling, wireless networks, and enterprise connectivity.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 10: Structured Cabling -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/office.jfif" alt="Structured Cabling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-orange-600/90 backdrop-blur-sm text-white text-xs font-semibold">Network</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-orange-700 transition-colors">Office Structured Cabling</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A new 4-floor office building needed a complete structured cabling system for 200+ workstations, meeting rooms, and wireless APs.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Installed 300+ Cat6A drops, 24-port patch panels per floor, cable trays, and labeled every termination point for easy maintenance.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Full 10Gbps capability across all drops. Cable management rated "excellent" by external audit. Zero cable-related faults in 2 years.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Cat6A Cabling</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Patch Panels</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Cable Trays</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Keystone Jacks</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 11: Wireless Mesh -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/wireless network mesh.jfif" alt="Wireless Network" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-orange-600/90 backdrop-blur-sm text-white text-xs font-semibold">Network</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-orange-700 transition-colors">Warehouse Wireless Mesh Network</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A 15,000 sqm warehouse had dead zones throughout, preventing handheld scanners from connecting to the inventory management system.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Deployed a mesh wireless network with 12 ceiling-mounted APs, seamless roaming, and dedicated SSIDs for staff and IoT devices.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Full warehouse Wi-Fi coverage at 300+ Mbps. Scanner connectivity uptime improved to 99.7%. Zero roaming dropouts.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Ubiquiti APs</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Mesh Topology</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">VLAN Segmentation</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">RADIUS Auth</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 12: Fiber Backbone -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/Fiber backbone.jfif" alt="Fiber Optic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-orange-600/90 backdrop-blur-sm text-white text-xs font-semibold">Network</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-orange-700 transition-colors">Inter-Building Fiber Backbone</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A hospital campus with 6 buildings relied on aging copper links, causing slow file transfers and unreliable VoIP call quality between departments.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Laid 2km of single-mode fiber optic cable underground, installed fiber termination enclosures, and configured 10G SFP+ links between buildings.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Inter-building speed increased from 100Mbps to 10Gbps. VoIP call quality rated "excellent" across all departments.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Single-Mode Fiber</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">SFP+ Modules</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">OTDR Testing</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Fusion Splicing</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 5: WEB & MOBILE DEVELOPMENT ==================== -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-1 h-10 bg-gradient-to-b from-pink-500 to-rose-600 rounded-full"></div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Web & Mobile Development</h2>
+                    <p class="text-gray-500 text-sm mt-1">Custom digital solutions built with modern frameworks and clean architecture.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 13: E-Commerce Platform -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/B2B.jfif" alt="E-Commerce Platform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-pink-600/90 backdrop-blur-sm text-white text-xs font-semibold">Development</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-pink-700 transition-colors">B2B E-Commerce Platform</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A wholesale distributor needed a custom B2B ordering platform with tiered pricing, bulk order management, and real-time inventory sync.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Built a responsive web platform with custom dashboard, REST API integration to their ERP, and role-based access for sales teams and clients.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Order processing time reduced by 60%. Client self-service adoption hit 85% within 3 months. Zero downtime during peak sales.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">HTML5</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Tailwind CSS</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">REST API</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Responsive</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 14: Mobile App -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/field.jfif" alt="Mobile App" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-pink-600/90 backdrop-blur-sm text-white text-xs font-semibold">Development</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-pink-700 transition-colors">Field Service Management App</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">A maintenance company struggled to dispatch technicians, track job completion, and invoice clients — all done via phone calls and paper forms.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Developed a cross-platform mobile app with GPS tracking, digital job sheets, photo uploads, client signatures, and automated invoicing.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Technician dispatch time cut by 70%. Invoice generation automated. Client satisfaction score improved from 72% to 94%.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">React Native</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">GPS Tracking</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Push Notifications</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Offline Sync</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 15: Corporate Website -->
+                <article class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div class="relative h-52 overflow-hidden bg-gray-100">
+                        <img src="images/corporate.jfif" alt="Corporate Website" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-pink-600/90 backdrop-blur-sm text-white text-xs font-semibold">Development</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-pink-700 transition-colors">Corporate Website Redesign</h3>
+                        <div class="space-y-3 mb-5">
+                            <div>
+                                <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">The Challenge</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">An engineering firm's outdated website was not mobile-friendly, loaded in 8+ seconds, and ranked poorly on Google — losing potential clients.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider">The Solution</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Rebuilt from scratch with semantic HTML5, Tailwind CSS, optimized images, lazy loading, and SEO best practices for every page.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">The Result</span>
+                                <p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Page load time dropped to 1.2s. Mobile traffic increased by 140%. Organic search ranking jumped from page 4 to page 1 for key terms.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">HTML5</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Tailwind CSS</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">SEO Optimized</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-medium">Lazy Loading</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GITHUB REPOSITORY CALLOUT ==================== -->
+    <section class="py-16 md:py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-1/4 w-64 h-64 bg-blue-500 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-indigo-500 rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12 text-center">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center mx-auto mb-6 shadow-lg border border-gray-600">
+                    <i class="fab fa-github text-3xl text-white"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Inspect Our Code</h2>
+                <p class="text-gray-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+                    We believe transparency builds trust. Explore our repositories to see clean code, proper documentation, and well-structured project architecture in action.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://github.com/RosemaryChisom375" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-white text-gray-900 font-semibold text-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl">
+                        <i class="fab fa-github text-xl"></i>
+                        View GitHub Profile
+                    </a>
+                    <a href="https://github.com/RosemaryChisom375/SecureNet-Solutions" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-white/10 border border-white/20 text-white font-semibold text-lg hover:bg-white/20 transition-all">
+                        <i class="fas fa-code-branch"></i>
+                        View Repository
+                    </a>
+                </div>
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
+                    <span class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Clean HTML5 Structure</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Tailwind CSS Utility-First</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Zero JavaScript Dependencies</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Fully Responsive</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-halved text-white text-xs"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">SecureNet Solutions</span>
+                    </a>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                        Delivering cutting-edge IT infrastructure, smart security solutions, and digital transformation services to businesses across Nigeria and beyond.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="https://github.com/RosemaryChisom375" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700 hover:border-gray-600">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chisom-rosemary-akabueze/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-blue-700 flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700 hover:border-blue-600">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Home</a></li>
+                        <li><a href="about.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> About Us</a></li>
+                        <li><a href="services.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Services</a></li>
+                        <li><a href="projects.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Projects</a></li>
+                        <li><a href="contact.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-video text-blue-500 text-xs w-4"></i> CCTV Installation</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-server text-blue-500 text-xs w-4"></i> Hardware Installation</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-code text-blue-500 text-xs w-4"></i> Website Development</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-mobile-screen text-blue-500 text-xs w-4"></i> Mobile App Development</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-headset text-blue-500 text-xs w-4"></i> Technical Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <p class="text-xs text-gray-500 text-center sm:text-left">&copy; 2026 SecureNet Solutions. All rights reserved.</p>
+                    <div class="flex items-center gap-4 text-xs text-gray-500">
+                        <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                        <span class="text-gray-700">|</span>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

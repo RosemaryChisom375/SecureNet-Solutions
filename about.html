@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureNet Solutions | IT Infrastructure & Smart Security</title>
+    <link href="css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800">
+
+    <!--About Page Prompt
+    As a professional website developer I want you use ONLY Html, css and Tailwind CSS, NO javascript, to build a responsive professional website About Us Page (about.html) for SecureNet Solutions, this website would be deployed and shared across different websites, SecureNet Solutions is an IT infrastructure and smart security website that deals on hardware installations, CCTV installations, Website Development, Mobile App development and technical support. 
+This website consists of multiple pages (Home Page (index.html), About Us Page (about.html), Services Page (services.html), Projects Page (projects.html) and Contact Page (contact.html).
+About Us Page (about.html)
+Kindly outlines the mission, technical standards, and the operational vision of this infrastructure and smart security company, make the About Us Page to be professional and concise.
+•	Mission & Vision: A structured, text-focused section with ample whitespace, utilizing Tailwind's typography hierarchy to explain the dedication to robust IT frameworks.
+•	Our Core Values: A grid of 3 cards detailing principles like Security-First Design, Continuous Optimization, and Technical Resilience.
+•	Operational Approach: A step-by-step visual timeline or grid showing how infrastructure is assessed, designed, and deployed securely.
+    -->
+
+    <!-- ==================== STICKY HEADER / NAVIGATION ==================== -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-2 shrink-0 group">
+                    <div class="w-9 h-9 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <i class="fas fa-shield-halved text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent tracking-tight">SecureNet</span>
+                    <span class="text-xl font-semibold text-gray-600 hidden sm:inline">Solutions</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-1">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">Home</a>
+                     <a href="about.html" class="px-4 py-2 rounded-lg text-sm font-medium text-blue-700 bg-blue-50 transition-all hover:bg-blue-100">About</a>
+                    <a href="services.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">Services</a>
+                    <a href="projects.html" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 transition-all hover:text-blue-700 hover:bg-gray-50">Projects</a>
+                    <a href="contact.html" class="ml-2 px-5 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <label for="mobile-menu-toggle" class="cursor-pointer p-2 rounded-lg text-gray-600 hover:text-blue-700 hover:bg-gray-100 transition-all">
+                        <i class="fas fa-bars text-xl"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="mobile-menu-toggle" class="peer hidden">
+        <div class="peer-checked:block hidden md:hidden border-t border-gray-100 bg-white shadow-lg">
+            <nav class="flex flex-col px-4 py-3 gap-1">
+                <a href="index.html" class="px-4 py-3 rounded-lg text-sm font-medium text-blue-700 bg-blue-50">Home</a>
+                <a href="about.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">About Us</a>
+                <a href="services.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">Services</a>
+                <a href="projects.html" class="px-4 py-3 rounded-lg text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-gray-50 transition-all">Projects</a>
+                <a href="contact.html" class="px-4 py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 text-center mt-1">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== PAGE CONTENT ==================== -->
+    <main class="min-h-[70vh] flex items-center justify-center">
+        <div class="text-center px-4">
+            <div class="w-15 h-15 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-shield-halved text-4xl text-blue-600"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">SecureNet Solutions</h1>
+            <p class="text-lg text-gray-500 max-w-xl mx-auto mb-8">IT Infrastructure & Smart Security — Hardware, CCTV, Web & Mobile Development, Technical Support.</p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a href="services.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+                    <i class="fas fa-briefcase"></i>
+                    Explore Services
+                </a>
+                <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-blue-700 font-semibold text-lg border-2 border-blue-100 hover:border-blue-300 hover:bg-blue-50 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">CCTV Installation</span>
+                <span class="px-4 py-2 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium">Web Development</span>
+                <span class="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">App Development</span>
+                <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">Tech Support</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- ==================== CORE PILLARS SUMMARY ==================== -->
+    <section class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-4">What We Do</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Core Focus Areas</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">Three pillars of technical excellence that define every engagement we undertake.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1: Network Infrastructure -->
+                <div class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:shadow-blue-300 transition-shadow">
+                        <i class="fas fa-network-wired text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Network Infrastructure</h3>
+                    <p class="text-gray-500 leading-relaxed mb-5">
+                        Structured cabling, fiber optic backbones, and enterprise-grade switching architectures that deliver speed, stability, and seamless scalability across your organization.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i class="fas fa-check text-blue-500 text-xs"></i> Cat6A / Fiber structured cabling</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i class="fas fa-check text-blue-500 text-xs"></i> VLAN & subnet architecture</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i class="fas fa-check text-blue-500 text-xs"></i> Wireless mesh & AP deployment</li>
+                    </ul>
+                    <a href="services.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors group-hover:gap-2.5">
+                        Learn More <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Pillar 2: Cloud Environments -->
+                <div class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-600 flex items-center justify-center mb-6 shadow-lg shadow-sky-200 group-hover:shadow-sky-300 transition-shadow">
+                        <i class="fas fa-cloud text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Cloud Environments</h3>
+                    <p class="text-gray-500 leading-relaxed mb-5">
+                        Hybrid and cloud-ready infrastructure built with virtualization, container orchestration, and automated disaster recovery — so your systems scale without limits.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i class="fas fa-check text-sky-500 text-xs"></i> VMware & Hyper-V virtualization</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i class="fas fa-check text-sky-500 text-xs"></i> Docker & Kubernetes orchestration</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i class="fas fa-check text-sky-500 text-xs"></i> Hybrid cloud migration strategy</li>
+                    </ul>
+                    <a href="services.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-sky-600 hover:text-sky-800 transition-colors group-hover:gap-2.5">
+                        Learn More <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Pillar 3: Enterprise Smart Security -->
+                <div class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center mb-6 shadow-lg shadow-emerald-200 group-hover:shadow-emerald-300 transition-shadow">
+                        <i class="fas fa-shield-halved text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Enterprise Smart Security</h3>
+                    <p class="text-gray-500 leading-relaxed mb-5">
+                        End-to-end physical and digital security — from 4K CCTV surveillance and biometric access control to intrusion detection systems with real-time alerting.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i class="fas fa-check text-emerald-500 text-xs"></i> 4K IP CCTV & NVR systems</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i class="fas fa-check text-emerald-500 text-xs"></i> Biometric & RFID access control</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i class="fas fa-check text-emerald-500 text-xs"></i> Intrusion detection & alerts</li>
+                    </ul>
+                    <a href="services.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600 hover:text-emerald-800 transition-colors group-hover:gap-2.5">
+                        Learn More <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US / VALUE PROPOSITION ==================== -->
+    <section class="py-20 md:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Content -->
+                <div>
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-indigo-100 text-indigo-700 text-sm font-semibold mb-4">Why SecureNet</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Built on Professional Standards,<br>Engineered for Results</h2>
+                    <p class="text-gray-500 text-lg leading-relaxed mb-8">
+                        We don't just install systems — we architect environments that perform under pressure. Every engagement is guided by three non-negotiable principles that separate us from generic IT providers.
+                    </p>
+
+                    <div class="space-y-6">
+                        <!-- Value 1: Reliability -->
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center shrink-0">
+                                <i class="fas fa-medal text-blue-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-1">Uncompromising Reliability</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed">We design for 99.99% uptime. Redundant power, failover protocols, and proactive monitoring mean your systems stay online when it matters most.</p>
+                            </div>
+                        </div>
+
+                        <!-- Value 2: Modern Engineering -->
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center shrink-0">
+                                <i class="fas fa-microchip text-indigo-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-1">Modern Engineering Practices</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed">From semantic HTML5 and utility-first CSS to containerized deployments and infrastructure-as-code, we build with tools and methodologies that scale.</p>
+                            </div>
+                        </div>
+
+                        <!-- Value 3: Ironclad Security -->
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center shrink-0">
+                                <i class="fas fa-lock text-emerald-600 text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900 mb-1">Ironclad Security Principles</h3>
+                                <p class="text-gray-500 text-sm leading-relaxed">Defense-in-depth from day one. Zero-trust networking, encrypted transmission, and physical-digital integration ensure no vulnerability goes unaddressed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Stats -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-1">99.9%</div>
+                        <p class="text-sm text-gray-500">Average Uptime</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-center">
+                        <div class="text-4xl font-bold text-indigo-600 mb-1">150+</div>
+                        <p class="text-sm text-gray-500">Deployments Completed</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-center">
+                        <div class="text-4xl font-bold text-emerald-600 mb-1">&lt;4h</div>
+                        <p class="text-sm text-gray-500">Average Response Time</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-center">
+                        <div class="text-4xl font-bold text-purple-600 mb-1">24/7</div>
+                        <p class="text-sm text-gray-500">Security Monitoring</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LATEST HIGHLIGHTS / CASE STUDY TEASER ==================== -->
+    <section class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-700 text-sm font-semibold mb-4">Latest Highlight</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Success in Action</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg">A snapshot of how we transformed a client's infrastructure from vulnerable to bulletproof.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="grid lg:grid-cols-2">
+                    <!-- Left: Image Area -->
+                    <div class="relative h-64 lg:h-auto overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Enterprise Server Room" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-transparent lg:bg-gradient-to-l"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 text-white text-xs font-semibold">Featured Project</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
+                                <i class="fas fa-building-columns text-white text-sm"></i>
+                            </div>
+                            <span class="text-blue-200 text-sm font-medium">Financial Institution</span>
+                        </div>
+
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Enterprise Server Room Overhaul</h3>
+                        <p class="text-blue-100/70 leading-relaxed mb-6">
+                            A legacy server infrastructure was experiencing frequent downtime, overheating, and zero redundancy. We designed and deployed a fully redundant server rack with dual UPS systems, intelligent cooling, and a fiber backbone — transforming a liability into a competitive advantage.
+                        </p>
+
+                        <div class="grid grid-cols-3 gap-4 mb-8">
+                            <div class="text-center p-3 rounded-xl bg-white/5 border border-white/10">
+                                <div class="text-2xl font-bold text-emerald-400">99.99%</div>
+                                <div class="text-xs text-blue-200/60 mt-1">Uptime Achieved</div>
+                            </div>
+                            <div class="text-center p-3 rounded-xl bg-white/5 border border-white/10">
+                                <div class="text-2xl font-bold text-blue-400">40%</div>
+                                <div class="text-xs text-blue-200/60 mt-1">Cooling Efficiency</div>
+                            </div>
+                            <div class="text-center p-3 rounded-xl bg-white/5 border border-white/10">
+                                <div class="text-2xl font-bold text-indigo-400">0</div>
+                                <div class="text-xs text-blue-200/60 mt-1">Unplanned Outages</div>
+                            </div>
+                        </div>
+
+                        <a href="projects.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-blue-900 font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl w-fit">
+                            View Full Case Study
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-halved text-white text-xs"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">SecureNet Solutions</span>
+                    </a>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                        Delivering cutting-edge IT infrastructure, smart security solutions, and digital transformation services to businesses across Nigeria and beyond.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <a href="https://github.com/RosemaryChisom375" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700 hover:border-gray-600">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chisom-rosemary-akabueze/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-blue-700 flex items-center justify-center text-gray-400 hover:text-white transition-all border border-gray-700 hover:border-blue-600">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Home</a></li>
+                        <li><a href="about.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> About Us</a></li>
+                        <li><a href="services.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Services</a></li>
+                        <li><a href="projects.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Projects</a></li>
+                        <li><a href="contact.html" class="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-gray-600"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-video text-blue-500 text-xs w-4"></i> CCTV Installation</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-server text-blue-500 text-xs w-4"></i> Hardware Installation</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-code text-blue-500 text-xs w-4"></i> Website Development</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-mobile-screen text-blue-500 text-xs w-4"></i> Mobile App Development</li>
+                        <li class="text-sm text-gray-400 flex items-center gap-2"><i class="fas fa-headset text-blue-500 text-xs w-4"></i> Technical Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <p class="text-xs text-gray-500 text-center sm:text-left">&copy; 2026 SecureNet Solutions. All rights reserved.</p>
+                    <div class="flex items-center gap-4 text-xs text-gray-500">
+                        <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                        <span class="text-gray-700">|</span>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
